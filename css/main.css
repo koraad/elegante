@@ -872,9 +872,9 @@ header {
     .trust-card h3 {
         font-size: 18px;
     }    
-      
+
     .about {
-    background-attachment: fixed;
+        background-attachment: scroll;
     }
 
 
