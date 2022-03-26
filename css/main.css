@@ -278,7 +278,7 @@ header {
 }
 
 .trust-card i {
-    font-size: 30px;
+    font-size: 40px;
     color: var(--bg-color-light);
     margin-top: 10px;
 }
@@ -291,6 +291,7 @@ header {
     font-size: 10px;
     font-weight: 400;
     color: var(--color-normal);
+    margin-bottom: 10px;
 }
 
 /* back to top button */
@@ -883,6 +884,10 @@ header {
     .trust-card h3 {
         font-size: 18px;
     }    
+
+    .trust-card h5 {
+        margin: 0;
+    }
 
     .about {
         background-attachment: scroll;
