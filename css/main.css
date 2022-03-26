@@ -600,22 +600,27 @@ header {
 .input-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
     align-items: center;
     margin-bottom: 40px;
 }
 
 .input-wrapper .input {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
 }
 
 .input-wrapper .input label {
-    display: inline-block;
+    
     color: var(--color-contrast);
     font-size: 15px;
     font-weight: 500;
     margin-right: 5px;
-    width: 50px;
+    width: 100%;
+    text-align: left;
 }
 
 
@@ -625,7 +630,7 @@ header {
     background-color: var(--bg-color-light);
     padding: 10px 20px;
     border-radius: 5px;
-    width: 80%;
+    width: 100%;
 }
 
 .input-wrapper .input textarea {
@@ -918,13 +923,23 @@ header {
   }
 
   @media screen and (max-width: 590px) {
-
+    
+    .input-wrapper .input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 20px;
+    }
+    
     .input-wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        margin-bottom: 40px;
+        margin: 0;
+        padding: 0 10px;
     }
 
     .footer-menu .icons i {
