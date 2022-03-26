@@ -618,7 +618,8 @@ header {
     color: var(--color-contrast);
     font-size: 15px;
     font-weight: 500;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
     width: 100%;
     text-align: left;
 }
