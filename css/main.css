@@ -873,10 +873,6 @@ header {
         font-size: 18px;
     }    
 
-    .about {
-        background-attachment: scroll;
-    }
-
 
   }
   @media screen and (max-width: 750px) {
@@ -941,6 +937,10 @@ header {
     .top-btn .fa-chevron-up {
 
         font-size: 20px;
+    }
+      
+    .about {
+        background-attachment: scroll;
     }
     
   }
