@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+
+    
+</head>
+<body onload="loadQuestion()">
+    <!-- navbar start -->
+        <!-- /* do not change this */ -->
+        <header>
+            <a href="../index.html" class="logo">Beancup <i class="fa-solid fa-mug-hot"></i></a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./student-details.html">Members</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../Sidath/menu.html">Our Menu</a></li>
+                    <li><a href="../Nimasha/buyproducts.html">Order Now</a></li>
+                    <li><a href="../Sidath/SiteMap.html">Site Map</a></li>
+                    <li><a href="../contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="icons">
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <i class="fa-solid fa-sun" id="light-mode"></i>
+                <i class="fa-solid fa-cart-shopping"></i>           
+            </div>
+        </header>
+    <button class="page-editor-button" onclick="document.location='nisalya-page-editor.html'">
+        Page Editor
+    </button>
+
+    <div id="pointsContainer">
+        <h1 id="points">0 Points</h1>
+    </div>
+    <div id="timerContainer">
+        <h1 id="timer">60s Remaining</h1>
+    </div>
+
+    <div class="control">
+        <button id="nextButton">Next</button>
+    </div>
+
+    <div class="container">
+
+        <form id="quizForm" class="small-con">
+            <div>
+                <h1 id="questionNumber">Question number</h1><br />
+
+                <h2 id="question01">Question number</h2>
+            </div>
+
+            <span class="btnn"><input type="radio" name="answers" class="btn" id="Q1-1" value="">
+                <label for="Q1-1" id="Q1-1L">Mornings</label>
+            </span>
+
+            <span class="btnn"><input type="radio" name="answers" class="btn" id="Q1-2" value="">
+                <label for="Q1-2" id="Q1-2L">Evening</label></span>
+
+            <span class="btnn"><input type="radio" name="answers" class="btn" id="Q1-3" value="">
+                <label for="Q1-3" id="Q1-3L">Afternoon</label></span>
+
+            <span class="btnn"><input type="radio" name="answers" class="btn" id="Q1-4" value="">
+                <label for="Q1-4" id="Q1-4L">Night</label></span>
+
+
+        </form>
+
+        <div class="control">
+            <button id="resetButton">Restart Quiz</button>
+        </div>
+    </div>
+
+    <!-- footer section start -->
+    <!-- /* do not change this */ -->
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./student-details.html">Our Members</a></li>
+                    <li><a href="../Sidath/menu.html">Menu</a></li>
+                    <li><a href="../contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+
+                <h3>Follow Us</h3>
+                <p>Share your thoughts about us with the community</p>
+
+                <div class="icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5>© 2022 The Cafe. All Rights Reserved</h5>
+        </div>
+
+    </footer>
+    
+    <script>
+        var radioButtons = document.querySelectorAll("input[name='answers']");
+        if (document.querySelector("input[name='answers'")) {
+            radioButtons.forEach((radioButton) => {
+                radioButton.addEventListener("change", () => {
+                    document.getElementById("nextButton").style.visibility = "visible";
+                    getRadioValue(radioButtons);
+                });
+            });
+        } else {
+            console.log("Not reading the event listener!");
+        }
+
+        document.getElementById("nextButton").addEventListener("click", () => {
+            pressNext()
+        });
+        document.getElementById("resetButton").addEventListener("click", () => {
+            resetQuiz()
+        })
+    </script>
+
+    <!-- /* do not change this */ -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>
