@@ -250,7 +250,7 @@ header {
     width: 100%;
     height: 100vh;
     padding: 0;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .banner .overlay {
