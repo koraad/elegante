@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="styleMenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+
+        // body js
+        function openNav() {
+		  document.getElementById("myNav").style.width = "100%";
+        }
+		function closeNav() {
+		  document.getElementById("myNav").style.width = "0%";
+		}
+
+
+        function changeColor(getColor) {
+            let bg = document.querySelector('.bg');
+            let selectColor = getColor.value;
+            document.body.style.backgroundColor = selectColor;
+            }
+
+        function colorChange(passColor) {
+            let colorFont = document.querySelector('.colorFont');
+            let colorSelect = passColor.value;
+            document.body.style.color = colorSelect;
+            }
+
+    </script>
+    </head>
+    <body>
+
+        <!-- navbar start -->
+        <!-- /* do not change this */ -->
+        <header>
+            <a href="../index.html" class="logo">Beancup <i class="fa-solid fa-mug-hot"></i></a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Nisalya/student-details.html">Members</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a class="active" href="./menu.html">Our Menu</a></li>
+                    <li><a href="../Nimasha/buyproducts.html">Order Now</a></li>
+                    <li><a href="./SiteMap.html">Site Map</a></li>
+                    <li><a href="../contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="icons">
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <i class="fa-solid fa-sun" id="light-mode"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+
+        <form action="search" id="search-form">
+            <div class="search-box">
+                <input type="text" placeholder="Search Here...">
+                <label for="search" class="fa-solid fa-magnifying-glass"></label>
+                <i class="fa-solid fa-xmark" id="search-toggle"></i>
+
+            </div>
+        </form>
+        <!---------------------Page Editor-------------------------------------------------->
+			<div id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<div class="student"> STUDENT 4<br>Editor: Sidath Perera<br>
+					Student ID: 20200847<br>Task Completed:<br>Menu<br><br>
+					</div>
+				</div>
+			</div>
+			<div id="right-bottom">
+				<span style="font-size:20px;cursor:pointer;position:fixed;bottom:13px;right:14px;color:white;" onclick="openNav()">&#9776; Page Editor
+				</span>
+			</div>
+
+
+
+<!------------------dropdown Menu------------>
+            <select class="selectColor" onchange="changeColor(this)">
+            <option selected disabled hidden>Background</option>
+            <option value="#ff2323">Background-Red</option>
+            <option value="#696969">Background-Grey</option>
+            <option value="#9b1fe8">Background-Purple</option>
+            <option value="#00008B">Background-Blue</option>
+            <option value="#000000">Background-Black</option> 
+
+            </select>
+
+            <select class="colorSelect" onchange="colorChange(this)">
+            <option selected disabled hidden>Font colour</option>
+            <option value="#ff2323">Font-Red</option>
+            <option value="#1D8348">Font-Green</option>
+            <option value="#9b1fe8">Font-Purple</option>
+            <option value="#ff69b4">Font-Pink</option>
+            <option value="#000000">Font-Black</option>
+
+            </select>
+
+
+<!---------------Entrees------------->
+
+        <fieldset>
+            <legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entrees&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+            <section class="entrees-container">
+
+
+            <div class="items">
+                <div class="container">
+                    <img src="Entrees/burger.png" alt="Chicken burge" class="image">
+                    <div class="desc">Chicken burger</div>
+                    <div class="middle">
+                        <div class="text">Chicken burger <br><br> &#163 2.75 </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="container">
+                    <img src="Entrees/lemon_pie_1100x925.png" alt="Lemon meringue pie" class="image">
+                    <div class="desc">Lemon meringue pie</div>
+                    <div class="middle">
+                        <div class="text">Lemon meringue pie <br><br> &#163 2.47 </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="container">
+                    <img src="Entrees/pancake_1100x925.png" alt="American pancakes" class="image">
+                    <div class="desc">American pancakes</div>
+                    <div class="middle">
+                        <div class="text">American pancakes <br><br> &#163 0.56 </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="container">
+                    <img src="Entrees/tacos_1100x925.png" alt="Grilled cheese tacos" class="image">
+                    <div class="desc">Grilled cheese tacos</div>
+                    <div class="middle">
+                        <div class="text">Grilled cheese tacos <br><br> &#163 1.53 </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="container">
+                    <img src="Entrees/hot-dog.png" alt="Hot Dog" class="img">
+                    <div class="desc">Hot Dog</div>
+                    <div class="mid">
+                        <div class="text">Hot Dog <br><br> &#163 1.81</div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </fieldset>
+
+
+<!-----------------------APPETIZERS------------------->
+        <fieldset>
+            <legend style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Appetizers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+            <section class="entrees-container">
+                <div class="items">
+                    <div class="container">
+                        <img src="Appetizers/fries_PNG97884.png" alt="French Fries" class="img">
+                        <div class="desc">French Fries</div>
+                        <div class="mid">
+                            <div class="text">French Fries <br><br>&#163 0.56</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="container">
+                        <img src="Appetizers/kisspng-buffalo-wing-nachos-onion-ring-wrap-macaroni-and-c-sticks-5ac414802191e5.5826062815227997441375.png" alt="Chicken Nuggets" class="img">
+                        <div class="desc">Chicken Nuggets</div>
+                        <div class="mid">
+                            <div class="text">Chicken Nuggets <br><br>&#163 0.84</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="container">
+                        <img src="Appetizers/kisspng-pizza-buffalo-wing-onion-ring-mozzarella-sticks-ga-mozzarella-sticks-5b0eada6918c50.9046855415276886145962.png" alt="Mozzarella sticks" class="img">
+                        <div class="desc">Mozzarella sticks</div>
+                        <div class="mid">
+                            <div class="text">Mozzarella sticks <br><br>&#163 1.11</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </fieldset>
+
+<!-----------------------DRINKS------------------------>
+
+        <fieldset>
+            <legend style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drinks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+            <section class="entrees-container">
+
+
+            <div class="items">
+                <div class="container">
+                    <img src="Drinks/dl.beatsnoop.com-1648118677_ccexpress.png" alt="Vanilla Milkshake" class="picture">
+                    <div class="desc">Vanilla Milkshake</div>
+                    <div class="middle">
+                        <div class="text">Vanilla Milkshake <br><br>&#163 0.70</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="container">
+                    <img src="Drinks/download.png" alt="Chocolate Milkshake" class="picture">
+                    <div class="desc">Chocolate Milkshake</div>
+                    <div class="middle">
+                        <div class="text">Chocolate Milkshake <br><br>&#163 0.78</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="container">
+                    <img src="Drinks/dl.beatsnoop.com-1648115341_ccexpress.png" alt="Strawberry Milkshake" class="picture">
+                    <div class="desc">Strawberry Milkshake</div>
+                    <div class="middle">
+                        <div class="text">Strawberry Milkshake <br><br>&#163 0.78</div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </fieldset>
+
+        <br><br><br><br>
+
+
+    <!-- footer section start -->
+    <!-- /* do not change this */ -->
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Nisalya/student-details.html">Our Members</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="../contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+
+                <h3>Follow Us</h3>
+                <p>Share your thoughts about us with the community</p>
+
+                <div class="icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5>© 2022 The Cafe. All Rights Reserved</h5>
+        </div>
+
+    </footer>
+
+    <!-- /* do not change this */ -->
+    <script src="./menu.js"></script>
+</body>
+</html>

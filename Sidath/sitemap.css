@@ -1,0 +1,361 @@
+/* do not change these styling */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #854d27;
+    --secondary-color: #dd7230;
+    --tertiary-color: #f4c95d;
+    --bg-color-light: #e7e393;
+    --bg-color-dark: #04030f;
+    --color-contrast: white;
+    --color-normal: black;
+    --color-fries: black;
+    --transition-basic: 0.5s ease-in-out;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--bg-color-dark);
+}
+
+
+body.active {
+    --primary-color: black;
+    --secondary-color: #dd7230;
+    --tertiary-color: black;
+    --bg-color-light: #e7e393;
+    --bg-color-dark: #04030f;
+    --color-contrast: black;
+    --color-normal: white;
+    --color-fries: #854d27;
+}
+
+
+h1 {
+    margin: 30px 0;
+    text-transform: uppercase;
+    color: #e7e393;
+    font-size: 70px;
+    font-weight: 500;
+    
+}
+
+h2 {
+    color: #854d27;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+span {
+    color: var(--color-contrast);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* navbar start */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0.5px 0.5px 3px 0.5px rgb(136,136,136);
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: var(--color-normal);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.logo .fa-mug-hot {
+    color: var(--bg-color-light);
+    transform: translateY(-5px);
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul a {
+    color: var(--color-contrast);
+    margin: 2px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+.navbar ul li .active,
+.navbar ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--color-normal);
+    transition: 0.3s ease-in-out;
+    
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icons i {
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #04030f;
+    background-color: var(--bg-color-light);
+    transition: 0.5s ease-out;
+
+}
+.icons i:hover {
+    background-color: #dd7230;
+    color: white;
+    transform: rotate(360deg);
+
+}
+
+#search-form {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10005;
+}
+
+#search-form.active {
+    top: 0;
+}
+
+#search-form input {
+    width: 500px;
+    height: auto;
+    padding: 20px 40px;
+    background-color: transparent;
+    border-bottom: solid white 3px;
+}
+#search-form input::placeholder {
+    font-size: 25px;
+    color: white;
+}
+#search-form .fa-solid {
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+}
+#search-form .fa-solid.fa-xmark {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#search-form .fa-solid:hover {
+    color: var(--secondary-color);
+}
+
+
+
+
+/* footer section start */
+/* do not change this */
+
+.footer {
+	padding: 40px;
+	background-color: var(--primary-color);
+  }
+  
+  .footer .footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 30px;
+  }
+  
+  .footer-menu h3,
+  .footer-menu p {
+	text-align: center;
+	color: white;
+  }
+  
+  .footer-menu p {
+	margin: 10px 0;
+	font-weight: 200;
+  }
+  .footer-menu h3 {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+  }
+  .copyright h5 {
+	color: var(--bg-color-light);
+	letter-spacing: 1px;
+  }
+  
+  .footer-menu ul li {
+	margin: 5px 0;
+  }
+  
+  .footer-menu ul li a {
+	color: white;
+	font-weight: 400;
+	letter-spacing: 1px;
+  }
+  .footer-menu ul li a:hover {
+	text-decoration: underline;
+  }
+  
+  .footer-menu .icons {
+	display: flex;
+	justify-content: center;
+	
+  }
+  
+  .footer-menu .icons i {
+	margin: 0 10px;
+  }
+  .copyright {
+	text-align: center;
+	margin-top: 40px;
+  }
+  
+  
+
+/* sitemap styling  */
+
+body {
+	font-family:Trebuchet MS;
+	background-size: cover; 
+	background-attachment: fixed;
+	background-color: var(--bg-color-dark);
+	overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+#svgJS g:hover g text,
+#svgJS g:hover text {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    }
+
+#svgJS g:hover polygon,
+#svgJS g:hover rect,
+#svgJS g:focus polygon,
+#svgJS g:focus rect {
+    margin-left: auto;
+    margin-right: auto;
+    fill: #f4c95d;
+    stroke: #854d27;
+    stroke-width: 4;
+    }
+
+	
+	
+/*-----------------------------------------------------------Page editor------------------------------------------------------------*/
+
+.student{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	font-size:20px;
+	color:white;
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 40px;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+
+.overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+}
+
+
+    
+      
+			
