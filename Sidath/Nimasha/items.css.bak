@@ -1,0 +1,394 @@
+/* do not change these styling */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #854d27;
+    --secondary-color: #dd7230;
+    --tertiary-color: #f4c95d;
+    --bg-color-light: #e7e393;
+    --bg-color-dark: #04030f;
+    --color-contrast: white;
+    --color-normal: black;
+    --color-fries: black;
+    --transition-basic: 0.5s ease-in-out;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--bg-color-dark);
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body.active {
+    --primary-color: black;
+    --secondary-color: #dd7230;
+    --tertiary-color: black;
+    --bg-color-light: #e7e393;
+    --bg-color-dark: #04030f;
+    --color-contrast: black;
+    --color-normal: white;
+    --color-fries: #854d27;
+}
+
+
+h1 {
+    margin: 30px 0;
+    text-transform: uppercase;
+    color: #e7e393;
+    font-size: 70px;
+    font-weight: 500;
+    
+}
+
+h2 {
+    color: #854d27;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+span {
+    color: var(--color-contrast);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* navbar start */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0.5px 0.5px 3px 0.5px rgb(136,136,136);
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: var(--color-normal);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.logo .fa-mug-hot {
+    color: var(--bg-color-light);
+    transform: translateY(-5px);
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul a {
+    color: var(--color-contrast);
+    margin: 2px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+.navbar ul li .active,
+.navbar ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--color-normal);
+    transition: 0.3s ease-in-out;
+    
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icons i {
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #04030f;
+    background-color: var(--bg-color-light);
+    transition: 0.5s ease-out;
+
+}
+.icons i:hover {
+    background-color: #dd7230;
+    color: white;
+    transform: rotate(360deg);
+
+}
+
+#search-form {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10005;
+}
+
+#search-form.active {
+    top: 0;
+}
+
+#search-form input {
+    width: 500px;
+    height: auto;
+    padding: 20px 40px;
+    background-color: transparent;
+    border-bottom: solid white 3px;
+}
+#search-form input::placeholder {
+    font-size: 25px;
+    color: white;
+}
+#search-form .fa-solid {
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+}
+#search-form .fa-solid.fa-xmark {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#search-form .fa-solid:hover {
+    color: var(--secondary-color);
+}
+
+
+
+
+/* footer section start */
+/* do not change this */
+
+.footer {
+  padding: 40px;
+  background-color: var(--primary-color);
+  height: 100%;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-menu h3,
+.footer-menu p {
+  text-align: center;
+  color: white;
+}
+
+.footer-menu p {
+  margin: 10px 0;
+  font-weight: 200;
+}
+.footer-menu h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.copyright h5 {
+  color: var(--bg-color-light);
+  letter-spacing: 1px;
+}
+
+.footer-menu ul li {
+  margin: 5px 0;
+}
+
+.footer-menu ul li a {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.footer-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu .icons {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.footer-menu .icons i {
+  margin: 0 10px;
+}
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* body styling */
+
+
+.forform {
+	margin: 20;
+	padding: 20;
+	box-sizing: border-box;
+}
+.image_items {
+	width: 200px;
+	height: 200px;
+	
+}
+body {
+	background-image: url(https://as1.ftcdn.net/v2/jpg/03/18/03/22/1000_F_318032214_B83RWoTSm40vw4tkONpNllrcyNWT8aL9.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	min-height: 10cm;
+}
+.entree_items, .appertizer_items, .drink_items {
+	display: inline-block;
+	width: 398px;
+	background-color: #cc9966;
+}
+.forentrees {
+	align: center;
+}
+
+label {
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	font-size: 20px
+	
+}
+#entrees {
+	font-family: Stencil Std, fantasy;
+	font-size: 40px;
+	text-align: center;
+}
+#appertizers {
+	font-family: Stencil Std, fantasy;
+	font-size: 40px;
+	text-align: center;
+}
+#drinks {
+	font-family: Stencil Std, fantasy;
+	font-size: 40px;
+	text-align: center;
+}
+input {
+	background-color:  #ffb366;
+}
+button {
+	width: 400px;
+	height: 80px;
+	font-size: 30px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+button:hover{
+	background-color: #331f00;
+	color: #ffdb4d;
+}
+.userdetails {
+	background-color: #cc9966;
+	text-align: center;
+	height: 170px;
+}
+
+}
+#divforinvoice{
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 30px;
+    padding: 50px;
+}
+#span{
+	text-align: center;
+}
+
+#fordetails, #forburger, #forpancakes, #fortaco, #forpie, #forhotdog, #forchips, #forsticks, #fornuggets, #forchocolate, #forvanilla, #forstrawberry, #fortotal{
+	color: black;
+	font-family: Stencil Std, fantasy;
+	font-size: 20px;
+}
+#invoice {
+	text-align: center;
+	font-family: Stencil Std, fantasy;
+	font-size: 40px;
+	color: black;
+}
+#order_btn{
+    width: 200px;
+	height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 6px;
+    transition: 0.3s;
+}
+#order_btn:hover{
+    background-color:  #800040;
+    color: white;
+}
+.foodtypes {
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 40px;
+	text-align: center;
+	color: black;
+}
+
+
+.page-editor {
+	height: 60px;
+	background-color: #cc9966;
+	text-align: center;
+	font-size: 20px;
+	font-family: Stencil Std, fantasy;
+}
+.page-editor a:link {color:black;}
+.page-editor a:active{color:#663300;}
+.page-editor a:visited{color: #cc3300}
+.page-editor a:hover{color:  #ffd11a}
