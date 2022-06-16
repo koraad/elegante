@@ -343,7 +343,6 @@ header {
     background-color: transparent;
     width: 100%;
     height: 100%;
-    position: relative;
 }
 .home .swiper .swiper-wrapper .swiper-slide {
     background-repeat: no-repeat;
