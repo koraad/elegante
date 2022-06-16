@@ -124,29 +124,29 @@ orderPageButton.onclick = ()=> {
 
 // signup section
 
-// document.querySelector('.signup-btn').onclick = () => {
-//   document.querySelector('.signup').classList.add('active');
+document.querySelector('.signup-btn').onclick = () => {
+  document.querySelector('.signup').classList.add('active');
 
-// }
-// document.querySelector('.close-btn').onclick = () => {
-//   document.querySelector('.signup').classList.remove('active');
+}
+document.querySelector('.close-btn').onclick = () => {
+  document.querySelector('.signup').classList.remove('active');
 
-// }
+}
 
-// // hero swiper js
-// var swiperHero = new Swiper(".mySwiper-hero", {
-//   spaceBetween: 30,
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 3000,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: ".swiper-paginationHero",
-//     clickable: true,
-//   },
-//   loop:true
-// });
+// hero swiper js
+var swiperHero = new Swiper(".mySwiper-hero", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-paginationHero",
+    clickable: true,
+  },
+  loop:true
+});
 
 // preview menu items js
 
