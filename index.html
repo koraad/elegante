@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegante' | Your Family Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav-icon.png">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+
+    
+</head>
+<!-- right click off 
+oncontextmenu="return false"-->
+<body >
+
+    <!-- navbar start -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="./images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./Nisalya/student-details.html">Members</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./menu.html">Our Menu</a></li>
+                <li><a href="./Nimasha/buyproducts.html">Order Now</a></li>
+                <li><a href="./Sidath/SiteMap.html">Site Map</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <i class="fa-solid fa-sun" id="light-mode"></i>
+            <i class="fa-solid fa-cart-shopping"></i>           
+        </div>
+    </header>
+
+    <div class="cart">
+
+        <div class="cart-title">
+            <i class="fa-solid fa-xmark" id="cart-toggle"></i>
+            <h2>Shopping cart</h2>
+        </div>
+        
+        <div class="cart-content">
+            <p>Hurry Up! the offers stand only for today, secure your order now.</p>
+            <div class="cart-products">
+
+                <!-- quantity picker -->
+                <!-- <div class="counter">
+                    <span class="down" onclick="decreaseCount(event, this)">-</span>
+                    <input type="text" value="1">
+                    <span class="up" onclick="increaseCount(event, this)">+</span>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="cart-buy">
+            <div class="sub-total">
+                <h4>Sub Total</h4>
+                <div class="cart-total">$100.00</div>
+            </div>
+
+            <button class="btn order-cart" id="buy-now">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="order-page">
+        <h1>Thank You</h1>
+        <p>Your order is placed. Have a great day!</p>
+        <button class="btn btn-order-page">Return to home Page</button>
+    </div>
+
+    <form action="search" id="search-form">
+        <div class="search-box">
+            <input type="text" placeholder="Search Here...">
+            <label class="fa-solid fa-magnifying-glass"></label>
+            <i class="fa-solid fa-xmark" id="search-toggle"></i>
+
+        </div>
+    </form>
+
+    <!-- signup button start-->
+
+    <div class="signup-btn">
+        <h4>Gift Card</h4>
+        <i class="fa-solid fa-gift"></i>
+    </div>
+
+    <!-- signup form start -->
+
+    <div class="signup">
+
+        <div class="close-btn">
+            <p>Close</p>
+        </div>
+        <div class="signup-container">
+
+            <div class="signup-img">
+                
+            </div>
+
+            <div class="signup-content">
+
+                <form action="https://formspree.io/f/xvolywlg" method="POST" class="form-signup">
+                    <h1>Need 10% Off coupon code ? </h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, accusantium?</p>
+                    <div class="input-container">
+                        <label for="name">Full Name:</label>
+                        <input name="Name" type="text" placeholder="Type your Name here..."/>
+                        <label for="email">Email:</label>
+                        <input name="Email" type="email" placeholder="Type your E-mail here..."/>
+                    </div>
+
+                    <button type="submit" class="btn btn-signup" id="signup-btn">Sign Up</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    <!-- hero banner start -->
+    <section class="home" id="home">
+
+        <div class="swiper mySwiper-hero">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide slide-1">
+                  
+
+                  <div class="hero-content">
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                      <h1>Family and Party</h1>
+                      <div class="btn-container">
+                        <div class="btn hero-offer"><a href="#offers">Special Offers</a></div>
+                        <div class="btn contact"><a href="#contact">Contact Us</a></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide slide-2">
+                 
+
+                  <div class="hero-content">
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                      <h1>Fancy and Fun</h1>
+                      <div class="btn-container">
+                        <div class="btn hero-offer"><a href="#offers">Special Offers</a></div>
+                        <div class="btn contact"><a href="#contact">Contact Us</a></div>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="swiper-slide slide-3">
+                 
+
+                  <div class="hero-content">
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                      <h1>Fancy and Fun</h1>
+                      <div class="btn-container">
+                        <div class="btn hero-offer"><a href="#offers">Special Offers</a></div>
+                        <div class="btn contact"><a href="#contact">Contact Us</a></div>
+                      </div>
+                      
+                  </div>
+              </div>
+              
+            </div>
+
+            <div class="swiper-pagination swiper-paginationHero"></div>
+          </div>
+        
+    </section>
+
+    <!-- back to top button start-->
+
+    <div class="top-btn">
+        <a href="#home"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+
+    <!-- trust badges start -->
+
+    <section class="trust">
+
+        <div class="trust-wrapper">
+            <div class="trust-card">
+
+                <i class="fa-solid fa-person-biking"></i> 
+
+                <h3>Fast Delivery</h3>
+
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, necessitatibus.</h5>
+                
+            </div>
+            <div class="trust-card">
+
+                <i class="fa-solid fa-bowl-food"></i>
+
+                <h3>Organic Food</h3>
+
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, necessitatibus.</h5>
+                
+            </div>
+            <div class="trust-card">
+
+                <i class="fa-solid fa-money-check-dollar"></i> 
+
+                <h3>Affordale Prices</h3>
+
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, necessitatibus.</h5>
+                
+            </div>
+            <div class="trust-card">
+
+                <i class="fa-solid fa-house-chimney"></i> 
+
+                <h3>Chilling Place</h3>
+
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, necessitatibus.</h5>
+                
+            </div>
+             
+        </div>
+        
+
+    </section>
+
+    <!-- offers section start -->
+    <section id="offers">
+        <div class="heading">
+            <span>These crazy offers are just for you</span>
+            <h2>Best Deals</h2>
+        </div>
+
+        <div class="menu-container">
+
+            <div class="card card-offers" data-name="Offers-Card-1">
+
+                <div class="card-overlay">
+                    <button type="button" class="btn btn-overlay">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                <div class="card-banner">
+                    <h3>60% Off</h3>
+                </div>
+
+                <div class="img-bg">
+                    <img src="./images/dish-2.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Chillie Nuggets</h3>
+                    <div class="offer-price">
+                        <h4>£2.99</h4>
+                        <span>£6.00</span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="card card-offers" data-name="Offers-Card-2">
+
+                <div class="card-overlay">
+                    <button type="button" class="btn btn-overlay">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                <div class="card-banner">
+                    <h3>60% Off</h3>
+                </div>
+
+                <div class="img-bg">
+                    <img src="./images/dish-1.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Chicken Burger</h3>
+                    <div class="offer-price">
+                        <h4>£2.99</h4>
+                        <span>£6.00</span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="card card-offers" data-name="Offers-Card-3">
+
+                <div class="card-overlay">
+                    <button type="button" class="btn btn-overlay">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                <div class="card-banner">
+                    <h3>60% Off</h3>
+                </div>
+
+                <div class="img-bg">
+                    <img src="./images/dish-3.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Roasted Chicken</h3>
+                    <div class="offer-price">
+                        <h4>£2.99</h4>
+                        <span>£6.00</span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+
+        </div>
+
+        <div class="btn order-btn"><a href="./Nimasha/buyproducts.html">Order Here <i class="fa-solid fa-angle-down"></i></a></div>
+    </section>
+
+    <!-- offers preview section start -->
+
+
+    <div class="preview-container close">
+
+
+        <div class="card" data-target="Offers-Card-1">
+
+            <div class="card-flex-box">
+
+                <i class="fa-solid fa-xmark"></i>
+                <div class="img-bg">
+                    <img src="./images/dish-2.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Chillie Nuggets</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus fuga sapiente qui. Earum, molestiae. Corrupti alias nobis illo eos?</small>
+                    <div class="offer-price">
+                        <h4>£2.99</h4>
+                        <span>£6.00</span>
+                    </div>
+
+                    <div class="btn-box">
+                        <button class="card-btn btn-cart">Add to Cart</button>
+                        <button class="card-btn view-full">Full View</button>
+                    </div>
+                    
+                </div>
+            </div>            
+            
+        </div>
+        <div class="card" data-target="Offers-Card-2">
+
+            <div class="card-flex-box">
+
+                <i class="fa-solid fa-xmark"></i>
+                <div class="img-bg">
+                    <img src="./images/dish-1.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Chicken Burger</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus fuga sapiente qui. Earum, molestiae. Corrupti alias nobis illo eos?</small>
+                    <div class="offer-price">
+                        <h4>£2.99</h4>
+                        <span>£6.00</span>
+                    </div>
+
+                    <div class="btn-box">
+                        <button class="card-btn btn-cart">Add to Cart</button>
+                        <button class="card-btn  view-full">Full View</button>
+                    </div>
+                    
+                </div>
+            </div>            
+            
+        </div>
+        <div class="card" data-target="Offers-Card-3">
+
+            <div class="card-flex-box">
+                <i class="fa-solid fa-xmark"></i>
+                <div class="img-bg">
+                    <img src="./images/dish-3.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Roasted Chicken</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus fuga sapiente qui. Earum, molestiae. Corrupti alias nobis illo eos?</small>
+                    <div class="offer-price">
+                        <h4>£2.99</h4>
+                        <span>£6.00</span>
+                    </div>
+
+                    <div class="btn-box">
+                        <button class="card-btn btn-cart">Add to Cart</button>
+                        <button class="card-btn view-full">Full View</button>
+                    </div>
+                    
+                </div>
+            </div>            
+            
+        </div>
+        
+    </div>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="overlay"></div>
+        <div class="about-us">
+            <span>Lorem ipsum dolor sit amet.</span>
+            <h1>Who we are</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, maxime? Repudiandae iste accusamus iure a provident. Excepturi maiores voluptates nemo.</p>
+            <div class="btn btn-about"><a href="./about.html">Learn more</a></div>
+        </div>
+        
+    </section>
+
+    
+    <!-- menu section start -->
+
+    <section id="menu">
+        <div class="heading">
+            <span>amet consectetur adipisicing elit.</span>
+            <h2>Our Menu</h2>
+        </div>
+
+        <div class="menu-container">
+
+            <div class="card" data-name="menu-card-1">
+
+                <div class="img-bg">
+                    <img src="./images/coffee.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Cafe Latte</h3>
+                    <span class="price">£1.25</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                    
+                </div>
+                
+            </div>
+            <div class="card" data-name="menu-card-2">
+
+                <div class="img-bg">
+                    <img src="./images/home-img-2.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Roasted Chicken</h3>
+                    <span class="price">£7.00</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+            <div class="card" data-name="menu-card-3">
+
+                <div class="img-bg">
+                    <img src="./images/Ero.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Tofu Noodles</h3>
+                    <span class="price">£3.25</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+            <div class="card" data-name="menu-card-4">
+
+                <div class="img-bg">
+                    <img src="./images/dish-6.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Chicken Drumsticks</h3>
+                    <span class="price">£1.25</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+            <div class="card" data-name="menu-card-5">
+
+                <div class="img-bg">
+                    <img src="./images/coke.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Coke Buddy</h3>
+                    <span class="price">£1.25</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+
+            <div class="card" data-name="menu-card-6">
+                <div class="img-bg">
+                    <img src="./images/dish-5.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Chocholate Cookie</h3>
+                    <span class="price">£3.25</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+
+            <div class="card" data-name="menu-card-7">
+                <div class="img-bg">
+                    <img src="./images/dish-4.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Chicken Pizza</h3>
+                    <span class="price">£6.25</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+
+            <div class="card" data-name="menu-card-8">
+                <div class="img-bg">
+                    <img src="./images/home-hero.png" alt="">
+                </div>
+                
+                <div class="content-bg">
+                    <h3 class="name">Sausage Pizza</h3>
+                    <span class="price">£8.25</span>
+                    <button class="card-btn quick-btn">Quick View</button>
+                    <button class="card-btn btn-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="btn order-btn"><a href="./Sidath/menu.html">See full menu <i class="fa-solid fa-angle-down"></i></a></div>
+    </section>
+    
+
+    <!-- quiz section start -->
+    <section id="quiz">
+
+        <div class="quiz-wrapper">
+
+            <div class="quiz-content">
+                <span>Wanna have fun, while you get gifts?</span>
+                <h1>WIN "FREE" FRIES</h1>
+                <p>Participate in our fun quiz and win FREE fries if you get all answers correct</p>
+                <div class="btn fries-btn"><a href="./Nisalya/quiz.html">Take the quiz <i class="fa-brands fa-hotjar"></i></a></div>
+            </div>
+
+            <div class="quiz-image">
+                <img src="./images/fries.png" alt="">
+
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- reviews section start -->
+
+    <section id="reviews">
+
+        <div class="heading">
+          <span>Still have doubts about our service? Then see below</span>
+          <h2>What our customers say</h2>
+        </div>
+
+        <div class="swiper mySwiper-reviews">
+            <div class="swiper-wrapper reviews">
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-8.jfif" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-7.jfif" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-6.jfif" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-5.jfif" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-4.png" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-3.png" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-1.png" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide reviews">
+
+                    <div class="reviews-card">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                        
+                        <img src="./images/pic-2.png" alt="">
+
+                        <div class="description">
+                            <small>Daniel</small>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <h4>Best food ever</h4>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eaque ratione ad explicabo assumenda. Aspernatur nesciunt repellat exercitationem sit rerum!</p>
+                        
+                        </div>
+                                              
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        
+            <div class="swiper-pagination swiper-paginationReviews"></div>
+        </div>
+
+        <div class="btn order-btn"><a href="./Nimasha/buyproducts.html">Order Now <i class="fa-solid fa-angle-down"></i></a></div>
+    </section>
+
+    <!-- faq section start -->
+
+    <section class="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-wrapper">
+                
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                
+                
+            </div>
+            <div class="faq-wrapper">
+                
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                
+                
+            </div>
+            <div class="faq-wrapper">
+                
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                
+                
+            </div>
+            <div class="faq-wrapper">
+                
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                <div class="faq-content">
+                    <div class="question">
+                        <p>How do we order from this website ?</p>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consectetur, totam inventore molestiae ab mollitia enim quam iste quod recusandae!</p>
+                    </div>
+        
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+    </section>
+
+
+    <!-- map section start -->
+    <section id="map">  
+
+        <div class="map-description">
+            <div class="map-text">
+                <div class="map-heading">
+                    <i class="fa-solid fa-location-dot"></i><h1>find us</h1>
+                </div>
+
+                <div class="map-telephone">
+                    <ul>
+                        <li><i class="fa-solid fa-phone-volume"></i><small>Hotline: 011 2 844 273</small></li>
+                        <li><i class="fa-solid fa-house-circle-exclamation"></i><small>Address: 35 D. S. Fonseka Rd, Colombo 00500</small></li>
+                    </ul>
+                </div>
+
+                <div class="btn"><a href="https://www.google.com/maps/dir//Kimb%C3%B9la+Caf%C3%A9+35+D.+S.+Fonseka+Rd+Colombo+00500/@6.8937365,79.8639717,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3ae25b64292710b7:0x202da39d362639bb" target="_blank"> Open Maps</a></div>
+                
+            </div> 
+        </div>
+
+        <div class="map-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d31689.99340154154!2d79.89341066835706!3d6.860711882686413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d6.8470442!2d79.9304626!4m5!1s0x3ae25a40c4d40289%3A0xc122557528682b38!2selegante!3m2!1d6.8760169!2d79.8921635!5e0!3m2!1sen!2slk!4v1654973975047!5m2!1sen!2slk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+        </div>
+
+        
+    </section>
+
+    <!-- contact section start -->
+    <section id="contact">
+
+        <div class="heading">
+            <span>We are always here to help. We reply within 1 hour</span>
+            <h2>Query Form</h2>
+        </div>
+
+        <form action="https://formspree.io/f/xknyeqyn" method="POST" class="form" id="form">
+            <div class="input-wrapper">
+                <div class="form-control">
+                    <label for="name">Name:</label>
+                    <input name="Name" type="text" placeholder="Type here..." id="name" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="tel">Tel:</label>
+                    <input name="Tel" type="tel" placeholder="Type here..." id="tel" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input name="Email" type="email" placeholder="Type here..." id="email"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control radio">
+                    <label>Type of Query:</label>
+                    <div class="radio-container">
+                        <label><input type="radio" name="Query Type" class="radio" value="Order" checked>Order</label>
+                        <label><input type="radio" name="Query Type" class="radio" value="Complaint" >Complaint</label>
+                        <label><input type="radio" name="Query Type" class="radio" value="Other Inquiry" >Other Inquiry</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div class="form-control">
+                    <label for="address">Address:</label>
+                    <textarea name="Address" id="address" cols="30" rows="10"></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="message">Message:</label>
+                    <textarea name="Message" id="message" cols="30" rows="10" ></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+            </div>
+            
+            <button type="button" class="btn btn-form" id="check">Check</button>
+            <button type="reset" class="btn btn-form" id="reset">Reset</button>
+
+
+            <!-- popup start -->
+            <div class="popup" id="popup">
+                <div class="container">
+                    <h2>Your details are:</h2>
+                    <div class="form-values">
+                        <p>Name: <span id="output-name"></span>
+
+                        </p>
+                        <p>Tel: <span id="output-tel"></span>
+
+                        </p>
+                        <p>Email: <span id="output-email"></span>
+
+                        </p>
+                        <p>Category: <span id="output-category"></span>
+
+                        </p>
+                        <p>Address: <span id="output-address"></span>
+
+                        </p>
+                        <p>Message: <span id="output-message"></span>
+
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button type="button" class="btn btn-form" id="edit">Edit</button>
+                    <button type="submit" class="btn btn-form">Submit</button>
+                </div>
+                
+                <i class="fa-solid fa-xmark" id="popup-close"></i>
+    
+            </div>
+        </form> 
+
+    </section>
+
+    
+    <section class="page-editor">
+        <a href="./page-editor-pasindu.html"><h5>&lt;See Page Editor: Pasindu&gt;</h5></a>
+    </section>
+
+    <!-- footer section start -->
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Nisalya/student-details.html">Our Members</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+
+                <h3>Follow Us</h3>
+                <p>Share your thoughts about us with the community</p>
+
+                <div class="icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                
+    
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5>Copyright © 2022 by Elegante'. All Rights Reserved</h5>
+        </div>
+
+    </footer>
+
+    <!-- loader start -->
+
+    <div class="loader">
+        <img src="./images/loader.gif" alt="">
+    </div>
+
+
+    <!-- hero slider script -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
