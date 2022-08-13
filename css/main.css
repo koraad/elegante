@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+
+
 
 :root {
     /* --primary-color:  black; */
@@ -15,7 +18,7 @@
 }
 
 * {
-    font-family: 'Antic Didone', serif;
+    font-family: 'Dancing Script', cursive;
     letter-spacing: 2px;
     padding: 0;
     margin: 0;
@@ -56,6 +59,8 @@ section {
     height: auto;
     padding: 50px;
     text-align: center;
+    position: relative;
+    z-index: 5;
 }
 
 h1 {
@@ -73,7 +78,7 @@ h2 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    
     margin-bottom: 20px;
     font-size: 18px;
     width: 100%;
@@ -595,7 +600,7 @@ header {
 
 .trust {
     padding: 10px;
-    background-color: var(--tertiary-color);
+    background-color: var(--bg-color-dark);
     width: 100%;
     height: auto;
 }
@@ -618,20 +623,20 @@ header {
 .trust-card i {
     font-size: 30px;
     padding: 5px;
-    color: black;
+    color: var(--tertiary-color);
     margin-top: 10px;
 }
 .trust-card h3 {
-    font-family: 'Antic Didone', serif;
+    
     text-transform: uppercase;
     font-size: 12px;
     font-weight: lighter;
-    color: white;
+    color: var(--tertiary-color);
     margin: 5px 0;
 }
 .trust-card h5 {
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     color: black;
     margin-bottom: 10px;
 }
@@ -699,7 +704,7 @@ header {
 .signup-btn h4 {
     margin-left: 10px;
     color: black;
-    font-family: 'Antic Didone', serif;
+    
     font-weight: lighter;
 
 }
@@ -738,6 +743,17 @@ header {
     z-index: 17000;
 
 }
+
+
+.signup-container {
+    background-color: var(--color-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    position: relative;
+}
+
 .signup .close-btn {
     cursor: pointer;
     position: absolute;
@@ -749,24 +765,17 @@ header {
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border: white solid 1px;
+    border: var(--color-contrast) solid 1px;
 }
 .signup .close-btn:hover p {
     color: var(--tertiary-color);
 }
 .signup .close-btn p {
     font-size: 15px;
-    color: white;
+    color: var(--color-contrast);
     margin: 0;
 }
 
-.signup-container {
-    background-color: var(--color-normal);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 550px;
-}
 .signup-container .signup-content p {
     color: var(--color-contrast);
 }
@@ -796,11 +805,11 @@ header {
 }
 .signup-container .signup-content form h1 {
     color: var(--tertiary-color);
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
 }
 .signup-container .signup-content form p{
-    font-family: 'Antic Didone', serif;
+    
     margin: 30px 0;
     
 }
@@ -910,9 +919,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 3px solid var(--secondary-color); */
-    /* box-shadow: 0px 0px 3px 0.5px rgb(136,136,136); */
-    /* background-color: var(--primary-color); */
 
 }
 .menu .menu-container .card {
@@ -932,7 +938,6 @@ header {
    display: flex;
    justify-content: center;
    align-items: center;
-   /* box-shadow: 0px 0px 3px 0.5px rgb(136,136,136); */
    z-index: 1;
 }
 .menu-container .card .card-banner h3 {
@@ -983,20 +988,14 @@ header {
 
 .menu-container .card h3,
 .preview-container .card .card-flex-box .h3 {
-    font-family: 'Antic Didone', serif;
+    
     color: var(--color-contrast);
     font-size: 20px;
     font-weight: 400;
     margin: 5px 0;
 }
 
-/* .card .content-bg .offer-price,
-.preview-container .card .card-flex-box .content-bg .offer-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-} */
+
 .card .content-bg .offer-price h4,
 .preview-container .card .card-flex-box .content-bg .offer-price h4 {
     color: var(--primary-color);
@@ -1084,10 +1083,8 @@ body.active .menu-container .card .quick-btn {
 .preview-container .card .card-flex-box {
     position: relative;
    cursor: pointer;
-   width: 50vw;
-   max-width: 380px;
+   width: 380px;
    height: 90vh;
-   max-height: 650px;
    padding: 0;
    display: flex;
    flex-direction: column;
@@ -2018,6 +2015,7 @@ body.active #map iframe {
     margin-bottom: 250px;
     border: 0;
     outline: none;
+    position: relative;
 }
 
 .page-editor a {
@@ -2042,7 +2040,7 @@ body.active #map iframe {
     width: 100vw;
     height: 255px;
     position: fixed;
-    z-index: -1;
+    z-index: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -2061,7 +2059,7 @@ body.active #map iframe {
 
 .footer-menu h3,
 .footer-menu p {
-    font-family: 'Antic Didone', serif;
+    
     text-align: center;
     color: white;
     font-size: 16px;
@@ -2079,8 +2077,8 @@ body.active #map iframe {
     font-weight: 200;
 }
 .copyright h5 {
-    font-family: 'Antic Didone', serif;
-    color: var(--color-normal);
+    
+    color: white;
     letter-spacing: 1px;
 }
 
@@ -2188,6 +2186,25 @@ body.active #map iframe {
         width: auto;
     }
 
+
+    .preview-container .card .card-flex-box {
+        
+        height: 100vh;
+        
+    }
+
+    .preview-container .card .card-flex-box .img-bg img{
+        height: 250px;
+        width: 250px;
+        margin-top: 0;
+        
+    }
+
+    .preview-container .card .card-flex-box .content-bg {
+        justify-content: flex-start;
+        height: auto;
+    }
+    
    
   }
 
@@ -2496,6 +2513,11 @@ body.active #map iframe {
 
   @media screen and (max-width: 400px) {
 
+    .signup-container .signup-content form h1 {
+        
+        font-size: 40px;
+       
+    }
     .logo img {
         width: 120px;
     }
@@ -2532,4 +2554,22 @@ body.active #map iframe {
         margin-bottom: 80vh;
 
     }
+
+    .preview-container .card .card-flex-box {
+        
+        width: 100%;
+    }
+    .preview-container .card .card-flex-box .btn-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        width: 90%;
+    }
+    .preview-container .card .card-flex-box .btn-box .card-btn{
+        width: 100%;
+    }
+
+
   }
